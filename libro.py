@@ -11,8 +11,14 @@ class Libro:
         else:
             return f"utrnte: titolo=> {self.titolo}, stato=> non disponibile , codice=> {self.codice}, autori=>{self.autori}"
         
-    def agiungiAutore(self,autor):
-        self.autori.append(autor)
+    def __eq__(self,other):
+        if not isinstance(self,other):
+            return False
+        return self.titolo == other.titolo, self.codice == other.codice
+    
+
+    def agiungiAutore(self,autore):
+        self.autori.append(autore)
 
 
 

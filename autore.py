@@ -6,3 +6,8 @@ class Autore:
     def __repr__(self):
         return f"autore: nome=> {self.nome}, nazionalita=> {self.nazionalita}"
     
+    def __eq__(self,other):
+        if not isinstance(self,other):
+            return False
+        return self.nome == other.nome, self.nazionalita == other.nazionalita
+    
