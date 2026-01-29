@@ -1,5 +1,5 @@
 class Utente:
-    def __iit__(self,nome,numero_tessera,libri):
+    def __iit__(self,nome,numero_tessera):
         self.nome = nome
         self.numero_tessera = numero_tessera
         self.libri = [0]*3 #deve risultare una lista

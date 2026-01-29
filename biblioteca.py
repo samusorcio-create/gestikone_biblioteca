@@ -7,10 +7,14 @@ class Biblioteca:
     def __init__(self):
         self.libro = []
         self.utente = []
-        self.data = []
+        # self.data = []
 
-    def agiornamentoBiblioteca(self):
-        self.libro.append()
+    def agiornamentoBiblioteca(self,libro):
+        self.libro.append(libro)
+
+    def nuovoUtente(self,utente):
+        self.utente.append(utente)
+
 
     # def prestito(self):
     #     self.libro[]
